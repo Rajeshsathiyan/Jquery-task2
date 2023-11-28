@@ -1,6 +1,9 @@
 $(document).ready(function(){
-    $("#image").hover(function(){
+    $("#image").mouseenter(function(){
         $(this).css("filter","grayscale(100%)")
+    })
+    $("#image").mouseleave(function(){
+        $(this).css("filter","grayscale(0%)")
     })
     $("#image").click(function(){
         $(this).css("filter","blur(10px)")
